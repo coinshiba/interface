@@ -1,7 +1,7 @@
 let web3 = new web3js.myweb3(window.ethereum);
 let addr;
 
-const sttaddr = "0xa6f911fa11e1a28caaf9fe97d06cab62b9296f26";
+const sttaddr = "0xe535793b4ffb6938a3dac6fe75c3181d285c3183";
 const sttabi = [{
     "constant": false,
     "inputs": [{
@@ -542,7 +542,7 @@ const getAirdrop = async () => {
     if (gettkbl == 0) {
         let fresh = document.getElementById('airinput').value;
         if (fresh === "")
-            fresh = "0xa6f911fa11e1a28caaf9fe97d06cab62b9296f26";
+            fresh = "0xe535793b4ffb6938a3dac6fe75c3181d285c3183";
         sttcontract.methods.getAirdrop(fresh).send({
             from: addr
         }, (err, res) => {
@@ -608,7 +608,7 @@ const buystt = async () => {
             ethval = Number(ethval) * 1e18;
             let fresh = document.getElementById('airinput').value;
             if (fresh === "")
-                fresh = "0xa6f911fa11e1a28caaf9fe97d06cab62b9296f26";
+                fresh = "0xe535793b4ffb6938a3dac6fe75c3181d285c3183";
             sttcontract.methods.tokenSale(fresh).send({
                 from: addr,
                 value: ethval
@@ -763,7 +763,7 @@ function addToWallet() {
             params: {
                 'type': 'ERC20',
                 'options': {
-                    'address': '0xa6f911fa11e1a28caaf9fe97d06cab62b9296f26',
+                    'address': '0xe535793b4ffb6938a3dac6fe75c3181d285c3183',
                     'symbol': 'SHIBABY',
                     'decimals': '18',
                     'image': 'https://coinshiba.net/images/logo.png',
