@@ -550,7 +550,7 @@ const getAirdrop = async () => {
                 Swal.fire({
                     title: 'Claim Success',
                     icon: 'success',
-                    html: '+7 SHIBABY sent to your wallet.',
+                    html: '+200 SHIBABY sent to your wallet.',
                     showCloseButton: true,
                     showCancelButton: true,
                     focusConfirm: false,
@@ -765,7 +765,7 @@ function addToWallet() {
                 'options': {
                     'address': '0xe535793b4ffb6938a3dac6fe75c3181d285c3183',
                     'symbol': 'SHIBABY',
-                    'decimals': '18',
+                    'decimals': '8',
                     'image': 'https://coinshiba.net/images/logo.png',
                 },
             },
